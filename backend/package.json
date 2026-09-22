@@ -1,0 +1,16 @@
+{
+  "name": "recipe-mailer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "once": "node src/index.js --now"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "puppeteer": "^25.11.0"
+  }
+}

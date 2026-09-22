@@ -1,0 +1,10 @@
+services:
+  recipe-mailer:
+    build: .
+    image: recipe-mailer:latest
+    env_file: .env
+    environment:
+      TZ: Europe/Prague
+    volumes:
+      - ./data:/data
+      - ../recipes.json:/data/recipes.json:ro
